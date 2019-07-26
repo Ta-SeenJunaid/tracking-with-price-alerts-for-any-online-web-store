@@ -12,7 +12,8 @@ def init_db():
 from src.models.users.views import user_blueprint
 app.register_blueprint(user_blueprint, url_prefix="/users")
 
-
+if __name__=='__main__':
+    app.run(port = 4990, debug=True)
 
 
 
