@@ -24,7 +24,7 @@ def register_user():
 
 @user_blueprint.route('/alerts')
 def user_alerts():
-    pass
+    return "Alerts"
 
 @user_blueprint.route('/logout')
 def logout_user():
